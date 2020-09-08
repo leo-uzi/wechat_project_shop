@@ -1,0 +1,3 @@
+<!-- pages/order/order.wxml -->
+<!-- <text>pages/order/order.wxml</text> -->
+<tab tabs="{{tabs}}" bindhandleChangeTabs="handleChangeTab" class="goods_tab"></tab>

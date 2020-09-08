@@ -1,0 +1,22 @@
+<!-- pages/collect/collect.wxml -->
+<!-- <text>pages/collect/collect.wxml</text> -->
+<tab tabs="{{tabs}}" bindhandleChangeTabs="handleChangeTab" class="">
+    <view class="collect_title">
+        <view class="wrap_item active">全部</view>
+        <view class="wrap_item">正在热卖</view>
+        <view class="wrap_item">即将上线</view>
+    </view>
+    <view class="collect_content">
+        <view class="collect_content_item" wx:for="{{collect}}" wx:key="goods_id">
+            <navigator target="" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" open-type="navigate">
+                <view class="collect_img">
+                    <image src="{{item.goods_small_logo ? item.goods_small_logo : 'https://s1.ax1x.com/2020/08/17/dedVZ4.png'}}" mode="widthFix" />
+                </view>
+                <view class="collect_content_right">
+                    <view class="collect_goodsname">{{item.goods_name}}</view>
+                    <view class="collect_goodsprice">￥{{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</tab>

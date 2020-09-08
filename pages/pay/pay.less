@@ -1,0 +1,127 @@
+/* pages/pay/pay.wxss */
+.addressShow {
+    font-size: 30rpx;
+    padding: 20rpx;
+
+    .address_info {
+        display: flex;
+
+        .user_info {
+            flex: 2;
+
+            .user_name {
+                margin-bottom: 5rpx;
+            }
+        }
+
+        .user_phone {
+            flex: 1;
+        }
+    }
+
+}
+
+.cart_main {
+    margin-top: 15rpx;
+
+    .cart_title {
+        font-size: 35rpx;
+        color: var(--themeColor);
+        padding: 20rpx;
+        font-weight: 500;
+        border-top: 3rpx solid currentColor;
+        border-bottom: 3rpx solid currentColor;
+    }
+
+    .cart_item {
+        border-bottom: solid #cecece 1rpx;
+
+        .cart_content {
+            display: flex;
+
+            .cart_img {
+                flex: 2;
+
+                image {
+                    width: 80%;
+                }
+            }
+
+            .cart_goodsinfo {
+                flex: 4;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .cart_goodsname {
+                    font-size: 28rpx;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+
+                .number {
+                    display: flex;
+                    margin-top: -30rpx;
+
+                    .goods_price {
+                        flex: 3;
+                        font-size: 35rpx;
+                        color: var(--themeColor);
+                    }
+
+                    .goods_num {
+                        flex: 2;
+                        display: flex;
+
+                        .goods_amount {
+                            padding: 0 10rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart_bottom_wrap {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 80rpx;
+    font-size: 28rpx;
+    font-weight: 600;
+    border-top: 1rpx solid #cecece;
+
+    .cart_allprice_wrap {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 15rpx;
+
+        .cart_price {
+            display: flex;
+
+            .allPrice {
+                color: var(--themeColor);
+            }
+        }
+
+    }
+
+    .cart_count {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--themeColor);
+        color: #f0f0f0;
+        font-size: 32rpx;
+
+    }
+}

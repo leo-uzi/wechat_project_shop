@@ -1,0 +1,49 @@
+/* pages/collect/collect.wxss */
+.collect_title {
+  font-size: 30rpx;
+  background-color: #f6f6f6;
+  display: flex;
+  padding: 25rpx;
+}
+.collect_title .wrap_item {
+  padding: 15rpx;
+  background-color: #fff;
+  border: solid 1rpx #cecece;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+}
+.collect_title .active {
+  color: var(--themeColor);
+  border: solid 1rpx currentColor;
+}
+.collect_content {
+  font-size: 28rpx;
+}
+.collect_content .collect_content_item {
+  padding: 10rpx 0 10rpx 25rpx;
+  border-bottom: 1rpx solid #cecece;
+}
+.collect_content .collect_content_item navigator {
+  display: flex;
+  justify-content: space-around;
+}
+.collect_content .collect_content_item navigator .collect_img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collect_content .collect_content_item navigator .collect_img image {
+  width: 80%;
+}
+.collect_content .collect_content_item navigator .collect_content_right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collect_content .collect_content_item navigator .collect_content_right .collect_goodsprice {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 500;
+}

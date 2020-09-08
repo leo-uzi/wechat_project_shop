@@ -1,0 +1,195 @@
+/* pages/user/user.wxss */
+page {
+    background-color: #ececec;
+}
+
+.user_img {
+    position: relative;
+    height: 45vh;
+    background-color: var(--themeColor);
+
+    .user_img_big {
+        overflow: hidden;
+
+        image {
+            height: 46vh;
+            width: 110%;
+            transform: translate(-5%);
+            filter: blur(8rpx);
+        }
+    }
+
+    .user_img_icon {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+
+
+        image {
+            width: 160rpx;
+            height: 160rpx;
+            border-radius: 50%;
+            transform: translate(-50%);
+        }
+
+        .user_img_nickname {
+            display: flex;
+            justify-content: center;
+            margin-top: 20rpx;
+            transform: translate(-50%);
+            color: #ffffff;
+        }
+    }
+
+    .login_btn {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 160rpx;
+        height: 100rpx;
+        transform: translate(-50%);
+        border: solid 5rpx #fff;
+
+        navigator {
+            font-size: 40rpx;
+            color: #fff;
+            line-height: 80rpx;
+            text-align: center;
+        }
+    }
+
+
+}
+
+.user_content {
+    position: relative;
+    font-size: 29rpx;
+    color: #5f5f5f;
+
+
+    .user_history {
+
+        width: 95%;
+
+        position: absolute;
+        top: -40rpx;
+        left: 50%;
+        transform: translate(-50%);
+
+
+
+        .user_history_info {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 10rpx;
+            border-top-right-radius: 10rpx;
+
+
+            navigator {
+                flex: 1;
+                margin: 0 10rpx;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .user_count {
+                    color: var(--themeColor);
+                    margin: 5rpx 0
+                }
+
+                .user_text {
+                    margin-bottom: 10rpx;
+                }
+            }
+        }
+
+        .user_order {
+            margin-top: 20rpx;
+            background-color: #fff;
+
+            .my_order {
+
+                border-bottom: 1rpx solid #ebebeb;
+                padding: 20rpx 20rpx;
+            }
+
+            .user_order_wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .user_order_item {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 25rpx 0;
+
+                    .iconfont {
+                        color: var(--themeColor);
+                        font-size: 40rpx;
+                    }
+
+                    .icon-fukuantongzhi {
+                        font-size: 48rpx;
+                    }
+
+                    .icon-daishouhuo {
+                        font-size: 45rpx;
+                    }
+
+                    .user_order {}
+                }
+            }
+        }
+
+        .user_address {
+            margin: 20rpx 0;
+            padding: 20rpx 20rpx;
+            background-color: #fff;
+        }
+
+        .user_contact {
+            margin-top: 20rpx;
+            background-color: #fff;
+
+            .user_kefu {
+                padding: 20rpx 20rpx;
+                display: flex;
+
+                view {
+                    flex: 1;
+                }
+
+                .tel {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+
+            .user_advice {
+                border-top: 1rpx solid #ebebeb;
+                padding: 20rpx 20rpx;
+            }
+
+            .user_about {
+                border-top: 1rpx solid #ebebeb;
+                padding: 20rpx 20rpx;
+            }
+        }
+
+        .user_send {
+            margin-top: 20rpx;
+            padding: 20rpx 20rpx;
+            background-color: #fff;
+            margin-bottom: 60rpx;
+        }
+
+
+
+    }
+}

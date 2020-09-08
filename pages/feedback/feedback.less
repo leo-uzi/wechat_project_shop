@@ -1,0 +1,86 @@
+/* pages/feedback/feedback.wxss */
+page {
+
+
+    .fb_main {
+        height: 100vh;
+        margin-top: 0;
+        font-size: 28rpx;
+        background-color: #edf0ed;
+        padding: 10rpx 10rpx;
+        color: rgb(83, 83, 83);
+
+
+        .fb_tip {
+            margin-top: 20rpx;
+            display: flex;
+            flex-wrap: wrap;
+
+            .fb_tip_item {
+                background-color: #fff;
+                width: 30%;
+                text-align: center;
+                padding: 10rpx 20rpx;
+                border: solid 1rpx #cecece;
+                border-radius: 8rpx;
+                margin: 10rpx;
+            }
+        }
+
+        .fb_content {
+            margin-top: 25rpx;
+            border: solid 1rpx #cecece;
+            background-color: #fff;
+            padding: 15rpx;
+
+            textarea {}
+
+            .fb_text_add {
+                display: flex;
+                flex-wrap: wrap;
+
+
+                .fb_add {
+                    margin: 0;
+                    width: 90rpx;
+                    height: 90rpx;
+                    border: #cecece solid 1rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #cecece;
+                    font-size: 50rpx;
+                }
+
+                .add_img_item {
+                    margin-left: 18rpx;
+                }
+            }
+        }
+
+
+
+        .fb_bottom {
+            font-size: 30rpx;
+            margin-top: 25rpx;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                width: 25%;
+                padding: 15rpx;
+                color: #fff;
+                background-color: var(--themeColor);
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                text {
+                    font-weight: 400;
+
+                }
+            }
+        }
+    }
+}
